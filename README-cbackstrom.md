@@ -138,3 +138,23 @@ courses$.subscribe(
   noop,
   () => console.log('completed'));
 ```
+
+
+### 12. Building Components with RxJs - Reactive Design
+https://www.udemy.com/rxjs-course/learn/lecture/10788264#questions/7575340
+
+A much better approach is applying the filters directly to the observable using pipe to derive a new observable, like so:
+```typescript
+this.beginnersCourses$ = courses$
+  .pipe(
+    map(courses => courses.filter(course => course.category === 'BEGINNER'))
+  );
+
+```
+
+This observable can now be used in the template using the async pipe, like so:
+```html
+<courses-card-list [courses]="beginnersCourses$ | async">
+</courses-card-list>
+```
+
