@@ -1,11 +1,12 @@
-## General
+## RxJS 6 In Practise
 
+## General
 
 CTRL + SHIFT + P in Webstorm to show to off variable.
 
+## Section 1: Introduction to RxJs
 
-
-6. What is RxJs? What Problem Does it Solve?
+### 6. What is RxJs? What Problem Does it Solve?
 https://www.udemy.com/rxjs-course/learn/lecture/10786004#overview
 
 If we want actions in Javascript to take place after each other there
@@ -33,7 +34,7 @@ document.addEventListener('click', evt => {
 });
 ```
 
-7. What is an RxJs Observable? A Simple Explanation
+### 7. What is an RxJs Observable? A Simple Explanation
 https://www.udemy.com/rxjs-course/learn/lecture/10786244#overview
 
 This is a definition of a stream not the actual stream. 
@@ -56,7 +57,7 @@ const click$ = fromEvent(document, 'click');
 click$.subscribe(event => console.log(event));
 ```
 
-8. 3 Core RxJs Concepts - Errors, Completion and Subscriptions
+### 8. 3 Core RxJs Concepts - Errors, Completion and Subscriptions
 https://www.udemy.com/rxjs-course/learn/lecture/10786880#overview
 
 
@@ -75,7 +76,7 @@ click$.subscribe(
 Note that the event callback will not be triggered after the observable has
 been errored out or completed.
 
-9. Learn How Observables Work Under the Hood, Build Your Own HTTP Observable
+### 9. Learn How Observables Work Under the Hood, Build Your Own HTTP Observable
 https://www.udemy.com/rxjs-course/learn/lecture/10787208#overview
 
 A promise differs from an Observable in that is is automatically executed when defined.
