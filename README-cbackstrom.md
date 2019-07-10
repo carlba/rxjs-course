@@ -75,3 +75,37 @@ click$.subscribe(
 Note that the event callback will not be triggered after the observable has
 been errored out or completed.
 
+9. Learn How Observables Work Under the Hood, Build Your Own HTTP Observable
+https://www.udemy.com/rxjs-course/learn/lecture/10787208#overview
+
+A promise differs from an Observable in that is is automatically executed when defined.
+
+An Observable can be created, like so:
+
+```typescript
+import { Observable, Observer } from 'rxjs';
+    const http$ = new Observable((observer: Observer<any>) => {
+      fetch('/api/courses')
+        .then(response => {
+          return response.json();
+        })
+        .then(body => {
+          observer.next(body);
+          observer.complete();
+        })
+        .catch(err => {
+          observer.error(err);
+        });
+    });
+```
+
+Subscribe to it, like so:
+
+```js
+http$.subscribe(
+  (courses) => console.log(courses),
+  noop,
+  () => console.log('completed'));
+```
+
+
