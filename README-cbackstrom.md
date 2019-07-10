@@ -158,3 +158,13 @@ This observable can now be used in the template using the async pipe, like so:
 </courses-card-list>
 ```
 
+### 13. Sharing HTTP Responses with the shareReplay Operator
+https://www.udemy.com/rxjs-course/learn/lecture/10798736#questions/7575340
+
+The problem with the solution in 12 is that it actually triggers two separate http requests. The reason for
+
+this is that we subscribe to the derived observables twice. Since the observables are only blueprints they
+are actually triggered one per subscription. The shareReplay operator can be used to reuse the action defined
+in the event blueprint to all subscribers.
+
+The tap operator can be used to generate a side effect such as logging in a pipe chain.
