@@ -175,3 +175,20 @@ https://www.udemy.com/rxjs-course/learn/lecture/11121570#questions/7575340
 
 See [PDF](docs/rxjs-higher-order-mapping.pdf)
 
+### 15. Observable Concatenation - In-Depth Explanation
+https://www.udemy.com/rxjs-course/learn/lecture/10799008#questions/7575340
+
+The concat operator can be used to concatinate values from multiple observables. 
+It will output the values from each of them in order so until all values from the first source is
+outputted the values from the second source wont be acted upon.
+
+```typescript
+import { concat, noop, Observable, Observer, of } from 'rxjs';
+const source1$ = of(1, 2, 3);
+const source2$ = of(4, 5, 6);
+const source3$ = of(7, 8, 9);
+
+const result$ = concat(source1$, source2$, source3$);
+
+result$.subscribe(value => console.log(value));
+```
