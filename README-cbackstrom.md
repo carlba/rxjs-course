@@ -56,5 +56,22 @@ const click$ = fromEvent(document, 'click');
 click$.subscribe(event => console.log(event));
 ```
 
+8. 3 Core RxJs Concepts - Errors, Completion and Subscriptions
+https://www.udemy.com/rxjs-course/learn/lecture/10786880#overview
 
+
+```js
+click$.subscribe(
+  event => console.log(event),
+  err => console.log(err),
+  () => console.log('completed')
+);
+```
+
+`event` will run for each of the triggered events.
+`err` will run if an error happens during execution of the event.
+`complete` will be triggered when the subscription has finished.
+
+Note that the event callback will not be triggered after the observable has
+been errored out or completed.
 
