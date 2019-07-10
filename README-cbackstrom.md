@@ -123,3 +123,18 @@ const courses$ = http$
 );
 ```
 
+### 11. Building Components with RxJs - Imperative Design
+https://www.udemy.com/rxjs-course/learn/lecture/10788042#questions
+
+This is how you could populate contents of a component in a imperative way:
+
+```typescript
+courses$.subscribe(
+  courses => {
+    this.beginnersCourses = courses.filter(course => course.category === 'BEGINNER');
+    this.advancedCourses = courses.filter(course => course.category === 'ADVANCED');
+    console.log(courses);
+  },
+  noop,
+  () => console.log('completed'));
+```
