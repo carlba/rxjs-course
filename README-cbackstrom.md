@@ -168,3 +168,10 @@ are actually triggered one per subscription. The shareReplay operator can be use
 in the event blueprint to all subscribers.
 
 The tap operator can be used to generate a side effect such as logging in a pipe chain.
+
+
+### 14. RxJs Higher-Order Mapping Operators PDF
+https://www.udemy.com/rxjs-course/learn/lecture/11121570#questions/7575340
+
+See [PDF](docs/rxjs-higher-order-mapping.pdf)
+
