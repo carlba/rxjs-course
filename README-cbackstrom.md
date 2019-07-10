@@ -109,4 +109,17 @@ http$.subscribe(
   () => console.log('completed'));
 ```
 
+## Section 2: Essential RxJs Operators + Reactive Design
+
+### 10. What are RxJs Operators? Learn the Map Operator
+https://www.udemy.com/rxjs-course/learn/lecture/10787498#questions
+
+Get a certain part ob the observable output, like so: 
+
+```js
+const courses$ = http$
+  .pipe(
+  map(res => res.payload)
+);
+```
 
