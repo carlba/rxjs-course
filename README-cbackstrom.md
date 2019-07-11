@@ -253,3 +253,10 @@ https://www.udemy.com/rxjs-course/learn/lecture/10810514#questions/7575340
 
 ### 25. RxJs Error Handling - PDF Guide
 See [PDF](docs/rxjs-error-handling.pdf)
+
+### 26. RxJs Error Handling - The Catch and Replace Error Handling Strategy
+https://www.udemy.com/rxjs-course/learn/lecture/10810740#questions/7575340
+
+Handling HTTP error by returning a replacement value
+
+
