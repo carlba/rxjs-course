@@ -192,3 +192,8 @@ const result$ = concat(source1$, source2$, source3$);
 
 result$.subscribe(value => console.log(value));
 ```
+
+### 16. Form Draft Pre-Save Example and the RxJs Filter Operator
+https://www.udemy.com/rxjs-course/learn/lecture/10799520#questions/7575340
+
+* Always try to avoid nesting multiple subscriptions
