@@ -247,3 +247,7 @@ https://www.udemy.com/rxjs-course/learn/lecture/10810286#questions/7575340
 
 This shows how to only emit values if the observable has been stable for
 a certain amount of time and the value has changes to prevent duplicates.
+
+### 24. Finishing the Search Typeahead - The switchMap Operator
+https://www.udemy.com/rxjs-course/learn/lecture/10810514#questions/7575340
+
