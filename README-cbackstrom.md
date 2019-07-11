@@ -313,3 +313,6 @@ ngAfterViewInit() {
 https://www.udemy.com/rxjs-course/learn/lecture/10886340#questions/5970900
 
 ### 32. The RxJs Debug Operator - Implementation Conclusion 
+
+### 33. The RxJs forkJoin Operator - In-Depth Explanation and Practical Example
+https://www.udemy.com/rxjs-course/learn/lecture/10998632#questions/5970900
