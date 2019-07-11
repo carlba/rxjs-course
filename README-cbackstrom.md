@@ -260,3 +260,25 @@ https://www.udemy.com/rxjs-course/learn/lecture/10810740#questions/7575340
 Handling HTTP error by returning a replacement value
 
 
+### 27. The Catch and Rethrow RxJs Error Handling Strategy and the finalize Operator
+https://www.udemy.com/rxjs-course/learn/lecture/10810908#questions/7575340
+
+If we want the catchError or finalize operator to only be trigged once
+for all subscriptions but then in top of the chain, like so:
+
+```typescript
+const courses$: Observable<Course[]> = http$
+  .pipe(
+    catchError(err => {
+        console.log('Error occurred: ', err);
+        return throwError(err);
+      }
+    ),
+    finalize(() => {
+      console.log('finalize');
+    }),
+    tap(() => console.log('Http request executed')),
+    map(res => Object.values(res.payload)),
+    shareReplay()
+  );
+```
