@@ -293,3 +293,18 @@ take(3) operator to the errors.pipe.
 https://www.udemy.com/rxjs-course/learn/lecture/10885880#questions/5970900
 
 Give a observable a start value using startsWith operator.
+
+### 30. RxJs Throttling vs Debouncing - Understand the
+https://www.udemy.com/rxjs-course/learn/lecture/10886858#questions/5970900
+
+```typescript
+ngAfterViewInit() {
+  fromEvent<any>(this.input.nativeElement, 'keyup')
+    .pipe(
+      map(event => event.target.value),
+      throttleTime(500),
+    ).subscribe(console.log);
+
+}
+
+```
