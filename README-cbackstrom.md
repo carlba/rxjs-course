@@ -241,3 +241,9 @@ This lessons shows how to cancel an observable
 [switchMap](https://www.learnrxjs.io/operators/transformation/switchmap.html)
 
 https://www.udemy.com/rxjs-course/learn/lecture/10809602#questions/7575340
+
+### 23. Building a Search Typeahead - debounceTime and distinctUntilChanged Operators
+https://www.udemy.com/rxjs-course/learn/lecture/10810286#questions/7575340
+
+This shows how to only emit values if the observable has been stable for
+a certain amount of time and the value has changes to prevent duplicates.
