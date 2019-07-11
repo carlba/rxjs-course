@@ -335,3 +335,6 @@ Use it when you want the last emitted value before it completes.
 
 ReplaySubject will just give all subscribers all values no matter when
 they subscribe.
+
+### 38. Store Service Design - What Subject to Use?
+https://www.udemy.com/rxjs-course/learn/lecture/10999602#questions/5970900
