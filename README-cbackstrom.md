@@ -288,3 +288,8 @@ https://www.udemy.com/rxjs-course/learn/lecture/10811018#questions/7575340
 
 Delay failed http with x amount of seconds. If you want to only retry 3 times add the 
 take(3) operator to the errors.pipe.
+
+### 29. The startWith RxJs Operator - Simplifying the Course Component
+https://www.udemy.com/rxjs-course/learn/lecture/10885880#questions/5970900
+
+Give a observable a start value using startsWith operator.
