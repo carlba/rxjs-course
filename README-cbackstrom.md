@@ -231,5 +231,9 @@ https://www.udemy.com/rxjs-course/learn/lecture/10807892#questions/7575340
 Use it to don't allow more triggerings of an observable while the previous one is
 still running.
 
+### 21. Unsubscription In Detail - Implementing a Cancellable HTTP Observable
 
+https://www.udemy.com/rxjs-course/learn/lecture/10808502#questions/7575340
+
+This lessons shows how to cancel an observable
 
