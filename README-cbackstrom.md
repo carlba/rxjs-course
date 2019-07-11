@@ -327,3 +327,11 @@ https://www.udemy.com/rxjs-course/learn/lecture/10998986#questions/5970900
 
 * The BehaviourSubject will emit a default value directly on subscription.
 * Late subscribers of a BahaviourSubject will receive the last emitted value on subscription
+
+### 37. AsyncSubject
+https://www.udemy.com/rxjs-course/learn/lecture/10999048#questions/5970900
+
+Use it when you want the last emitted value before it completes.
+
+ReplaySubject will just give all subscribers all values no matter when
+they subscribe.
