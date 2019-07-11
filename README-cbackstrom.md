@@ -338,3 +338,6 @@ they subscribe.
 
 ### 38. Store Service Design - What Subject to Use?
 https://www.udemy.com/rxjs-course/learn/lecture/10999602#questions/5970900
+
+### 39. The Store Pattern - Loading
+https://www.udemy.com/rxjs-course/learn/lecture/10999602#questions/5970900
