@@ -316,3 +316,9 @@ https://www.udemy.com/rxjs-course/learn/lecture/10886340#questions/5970900
 
 ### 33. The RxJs forkJoin Operator - In-Depth Explanation and Practical Example
 https://www.udemy.com/rxjs-course/learn/lecture/10998632#questions/5970900
+
+
+## 35. What are RxJs Subjects? A Simple Explanation
+https://www.udemy.com/rxjs-course/learn/lecture/10998986#questions/5970900
+It is preferred to use fromPromise or from Event instead of Subject
+
