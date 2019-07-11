@@ -308,3 +308,8 @@ ngAfterViewInit() {
 }
 
 ```
+
+### 31. Implementing a Custom RxJs Operator - the Debug Operator
+https://www.udemy.com/rxjs-course/learn/lecture/10886340#questions/5970900
+
+### 32. The RxJs Debug Operator - Implementation Conclusion 
