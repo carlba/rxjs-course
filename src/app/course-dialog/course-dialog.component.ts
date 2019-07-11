@@ -44,11 +44,9 @@ export class CourseDialogComponent implements OnInit, AfterViewInit {
           concatMap((changes) => this.saveCourse(changes))
         ).
       subscribe(changes => {
+        console.log(changes);
 
       });
-
-
-
     }
 
     saveCourse(changes) {
