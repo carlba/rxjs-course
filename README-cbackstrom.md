@@ -282,3 +282,9 @@ const courses$: Observable<Course[]> = http$
     shareReplay()
   );
 ```
+
+### 28. The Retry RxJs Error Handling Strategy.screenflow
+https://www.udemy.com/rxjs-course/learn/lecture/10811018#questions/7575340
+
+Delay failed http with x amount of seconds. If you want to only retry 3 times add the 
+take(3) operator to the errors.pipe.
