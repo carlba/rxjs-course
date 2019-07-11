@@ -197,3 +197,9 @@ result$.subscribe(value => console.log(value));
 https://www.udemy.com/rxjs-course/learn/lecture/10799520#questions/7575340
 
 * Always try to avoid nesting multiple subscriptions
+
+
+### 17. The RxJs concatMap Operator - In-Depth Explanation and Practical Example
+https://www.udemy.com/rxjs-course/learn/lecture/10807250#questions/7575340
+
+Use concatMap operator to wait for the previous operator to finishing before starting the next.
