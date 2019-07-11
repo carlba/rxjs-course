@@ -339,5 +339,11 @@ they subscribe.
 ### 38. Store Service Design - What Subject to Use?
 https://www.udemy.com/rxjs-course/learn/lecture/10999602#questions/5970900
 
-### 39. The Store Pattern - Loading
+### 39. The Store Pattern - Loading Initial Data, Selector Methods, Consuming Data
 https://www.udemy.com/rxjs-course/learn/lecture/10999602#questions/5970900
+
+
+### 40. BehaviorSubject Store - Example of a Data Modification Operation
+https://www.udemy.com/rxjs-course/learn/lecture/11000016#questions/5970900
+
+
