@@ -251,3 +251,5 @@ a certain amount of time and the value has changes to prevent duplicates.
 ### 24. Finishing the Search Typeahead - The switchMap Operator
 https://www.udemy.com/rxjs-course/learn/lecture/10810514#questions/7575340
 
+### 25. RxJs Error Handling - PDF Guide
+See [PDF](docs/rxjs-error-handling.pdf)
