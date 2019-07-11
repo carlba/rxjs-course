@@ -223,3 +223,13 @@ https://www.udemy.com/rxjs-course/learn/lecture/10807624#questions/7575340
 
 Use to fire of multiple http requests simultaneously and waiting for them all to finish
 
+### 20. The RxJs exhaustMap Operator - In-Depth Explanation
+https://www.udemy.com/rxjs-course/learn/lecture/10807892#questions/7575340
+
+[exhaustMap]https://www.learnrxjs.io/operators/transformation/exhaustmap.html
+
+Use it to don't allow more triggerings of an observable while the previous one is
+still running.
+
+
+

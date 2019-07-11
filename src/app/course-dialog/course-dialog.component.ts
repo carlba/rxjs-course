@@ -4,7 +4,7 @@ import {Course} from "../model/course";
 import {FormBuilder, Validators, FormGroup} from "@angular/forms";
 import * as moment from 'moment';
 import {fromEvent} from 'rxjs';
-import {concatMap, distinctUntilChanged, exhaustMap, filter, mergeMap} from 'rxjs/operators';
+import { concatMap, distinctUntilChanged, exhaustMap, filter, mergeMap, tap } from 'rxjs/operators';
 import {fromPromise} from 'rxjs/internal-compatibility';
 
 @Component({
@@ -58,6 +58,12 @@ export class CourseDialogComponent implements OnInit, AfterViewInit {
     }
 
     ngAfterViewInit() {
+
+      fromEvent(this.saveButton.nativeElement, 'click')
+        .pipe(
+          exhaustMap(() => this.saveCourse(this.form.value))
+        ).subscribe();
+
 
 
     }
