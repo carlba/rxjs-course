@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { concat, interval, merge, noop, Observable, Observer, of, Subject } from 'rxjs';
+import { BehaviorSubject, concat, interval, merge, noop, Observable, Observer, of, Subject } from 'rxjs';
 import { createHttpObservable } from '../common/util';
 import { map } from 'rxjs/operators';
 
@@ -14,16 +14,21 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
 
-    const subject = new Subject();
+    const subject = new BehaviorSubject(0);
     const series1$ = subject.asObservable();
 
-    series1$.subscribe(console.log, console.log, console.log);
+    series1$.subscribe(val => console.log(`early sub: `, val), console.log, console.log);
 
     subject.next(1);
     subject.next(2);
     subject.next(3);
     subject.complete();
 
+
+    setTimeout(() => {
+      series1$.subscribe(val => console.log(`late sub:`, val));
+      subject.next(4);
+    });
 
 
 

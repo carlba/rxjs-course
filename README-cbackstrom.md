@@ -322,3 +322,8 @@ https://www.udemy.com/rxjs-course/learn/lecture/10998632#questions/5970900
 https://www.udemy.com/rxjs-course/learn/lecture/10998986#questions/5970900
 It is preferred to use fromPromise or from Event instead of Subject
 
+### 36. BehaviorSubject In Detail - When to Use it and Why?
+https://www.udemy.com/rxjs-course/learn/lecture/10998986#questions/5970900
+
+* The BehaviourSubject will emit a default value directly on subscription.
+* Late subscribers of a BahaviourSubject will receive the last emitted value on subscription
