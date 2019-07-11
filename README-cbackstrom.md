@@ -237,3 +237,7 @@ https://www.udemy.com/rxjs-course/learn/lecture/10808502#questions/7575340
 
 This lessons shows how to cancel an observable
 
+### 22. Setting Up the Course Component
+[switchMap](https://www.learnrxjs.io/operators/transformation/switchmap.html)
+
+https://www.udemy.com/rxjs-course/learn/lecture/10809602#questions/7575340
