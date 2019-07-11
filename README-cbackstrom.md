@@ -202,4 +202,16 @@ https://www.udemy.com/rxjs-course/learn/lecture/10799520#questions/7575340
 ### 17. The RxJs concatMap Operator - In-Depth Explanation and Practical Example
 https://www.udemy.com/rxjs-course/learn/lecture/10807250#questions/7575340
 
-Use concatMap operator to wait for the previous operator to finishing before starting the next.
+Use [concatMap](https://www.learnrxjs.io/operators/transformation/concatmap.html) operator to wait for the previous operator to finishing before starting the next.
+
+### 18. Understanding the merge Observable combination Strategy
+https://www.udemy.com/rxjs-course/learn/lecture/10807622#questions/7575340
+
+[mergeMap](https://www.learnrxjs.io/operators/transformation/mergemap.html)
+
+```typescript
+const interval1$ = interval(1000);
+const interval2$ = interval1$.pipe(map(val => 10 * val));
+
+merge(interval1$, interval2$).subscribe(console.log);
+```
