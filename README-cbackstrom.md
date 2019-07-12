@@ -349,3 +349,21 @@ https://www.udemy.com/rxjs-course/learn/lecture/11000016#questions/5970900
 
 ### 41. Refactoring the Course Component for Using the Store
 https://www.udemy.com/rxjs-course/learn/lecture/11000488#overview
+
+### 42. Forcing the Completion of Long Running Observables - First and Take Operators
+https://www.udemy.com/rxjs-course/learn/lecture/11007410#questions
+
+The first operator will complete the observable when the first value is emitted.
+
+```typescript
+this.course$ = this.store.selectCourseById(this.courseId).pipe(
+  first()
+);
+```
+
+this.course$ is derived from a subject and will never finish. The pipe operator
+creates a new observable that will complete when the first value is emitted.
+
+The take operator does exactly the same but for a specified amount of values.
+
+i.e `take(3)`

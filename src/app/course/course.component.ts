@@ -31,18 +31,11 @@ export class CourseComponent implements OnInit, AfterViewInit {
 
     this.courseId = +this.route.snapshot.paramMap.get('id');
 
-    // const course$ = createHttpObservable(`/api/courses/${courseId}`);
-    // const lessons$ = this.loadLessons();
-    //
-    // forkJoin(course$, lessons$).pipe(
-    //   tap(([course, lessons]) => {
-    //     console.log('course', course);
-    //     console.log('lessons', lessons);
-    //   })
-    // )
-    // .subscribe();
+    this.course$ = this.store.selectCourseById(this.courseId).pipe(
+      first()
+    );
 
-    this.course$ = this.store.selectCourseById(this.courseId);
+    forkJoin(this.course$, this.loadLessons()).subscribe(console.log);
 
     setRxJsLoggingLevel(RxJsLoggingLevel.INFO);
 
