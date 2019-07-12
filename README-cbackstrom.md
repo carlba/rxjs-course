@@ -367,3 +367,6 @@ creates a new observable that will complete when the first value is emitted.
 The take operator does exactly the same but for a specified amount of values.
 
 i.e `take(3)`
+
+### 43. The withLatestFrom RxJs Operator - Detailed Explanation
+https://www.udemy.com/rxjs-course/learn/lecture/11007728#questions

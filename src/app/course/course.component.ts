@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Course } from '../model/course';
-import { debounceTime, distinctUntilChanged, first, map, startWith, switchMap, tap } from 'rxjs/operators';
+import { debounceTime, distinctUntilChanged, first, map, startWith, switchMap, tap, withLatestFrom } from 'rxjs/operators';
 import { forkJoin, fromEvent, Observable } from 'rxjs';
 import { Lesson } from '../model/lesson';
 import { createHttpObservable } from '../common/util';
@@ -36,6 +36,13 @@ export class CourseComponent implements OnInit, AfterViewInit {
     );
 
     forkJoin(this.course$, this.loadLessons()).subscribe(console.log);
+
+    this.loadLessons().pipe(
+      withLatestFrom(this.course$)
+    )
+      .subscribe(([lessons, course]) => {
+        console.log('withLatestFrom', lessons, course);
+    });
 
     setRxJsLoggingLevel(RxJsLoggingLevel.INFO);
 
