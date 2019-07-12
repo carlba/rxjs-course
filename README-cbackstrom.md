@@ -347,3 +347,5 @@ https://www.udemy.com/rxjs-course/learn/lecture/10999602#questions/5970900
 https://www.udemy.com/rxjs-course/learn/lecture/11000016#questions/5970900
 
 
+### 41. Refactoring the Course Component for Using the Store
+https://www.udemy.com/rxjs-course/learn/lecture/11000488#overview

@@ -37,6 +37,16 @@ export class Store {
     return this.filterByCategory('ADVANCED');
   }
 
+
+  selectCourseById(courseId: number) {
+    console.log(typeof courseId);
+    return this.courses$
+      .pipe(
+        map(courses => courses.find(course => course.id === courseId))
+      );
+
+  }
+
   filterByCategory(category: string) {
     return this.courses$
       .pipe(
